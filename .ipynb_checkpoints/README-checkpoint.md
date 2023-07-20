@@ -18,6 +18,7 @@ The KaseiCoinCrowdsale contract was compiled using Solidity compiler 0.5.17 (the
 ### KaseiCoinCrowdsaleDeployer contract initialized and confirmed
 
 | ![KaseiCoinCrowdsaleDeployer contract initialized](Evaluation%20Evidence/kasei_coin_crowdsale_deployer_contract_initialized.png) | ![KaseiCoinCrowdsaleDeployer contract confirmed](Evaluation%20Evidence/kasei_coin_crowdsale_deployer_contract_confirmed.png) |
+| --- | --- |
 
 ![KaseiCoinCrowdsaleDeployer contract deployed](Evaluation%20Evidence/kasei_coin_crowdsale_deployer_contract_deployed.png)  
 The KaseiCoinCrowdsale contract was initialized using the following inputs:
