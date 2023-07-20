@@ -25,7 +25,7 @@ The KaseiCoinCrowdsaleDeployer contract was initialized using the following inpu
 - `NAME` => `KaseiCoin`
 - `SYMBOL` => `KSC`
 - `WALLET` => `0xD90aFeC47BD8e33A18233759869a5dA598F9673B`
-> **Note:** The wallet address was taken from address index `2` in Ganache.
+> **Note:** The `WALLET` address was taken from address index `2` in Ganache.
 
 Upon clicking the `transact` button, a transaction confirmation prompt was provided by MetaMask.
 
@@ -96,7 +96,7 @@ The deployed contract contains 15 functions:
 The first token purchase was initialized using the following inputs:
 - `VALUE` => `10` and `Ether`
 - `beneficiary` => `0x325e7365f2208Cf281d2AE62F6E3f2FE933b8F5e`
-> **Note:** The beneficiary address was taken from address index `1` in Ganache.
+> **Note:** The `beneficiary` address was taken from address index `1` in Ganache.
 
 The `VALUE` inputs are located in the `DEPLOY & RUN TRANSACTIONS` section of Remix - Ethereum IDE. The `beneficiary` input is located in the `buyTokens` function of the `KaseiCoinCrowdsale` contract.
 
@@ -125,7 +125,7 @@ Beneficiary confirmation of the token purchase was obtained using the `balanceOf
 The second token purchase was initialized using the following inputs:
 - `VALUE` => `31500000000000000000` and `Wei`
 - `beneficiary` => `0x4564415Df66508974afbf630Cd1a44196AA8d30f`
-> **Note:** The beneficiary address was taken from address index `0` in Ganache.
+> **Note:** The `beneficiary` address was taken from address index `0` in Ganache.
 
 The `VALUE` inputs are located in the `DEPLOY & RUN TRANSACTIONS` section of Remix - Ethereum IDE. The `beneficiary` input is located in the `buyTokens` function of the `KaseiCoinCrowdsale` contract.
 
