@@ -2,6 +2,9 @@
 Module 21 Challenge: Martian Token Crowdsale
 
 ## Evaluation evidence
+### Ganache initialized
+![Ganache initialized](Evaluation_Evidence/ganache_initialized.png)  
+The addresses used in this demonstration were obtained from a Ganache workspace.
 
 ### KaseiCoin contract compiled
 ![KaseiCoin contract compiled](Evaluation_Evidence/kasei_coin_contract_compiled.png)  
@@ -143,3 +146,12 @@ Crowdsale confirmation of the token purchase was obtained using the `weiRaised` 
 #### Beneficiary confirmation
 ![Second token purchase beneficiary confirmation](Evaluation_Evidence/second_token_purchase_beneficiary_confirmation.png)  
 Beneficiary confirmation of the token purchase was obtained using the `balanceOf` function of the `KaseiCoin` contract. The address entered in the `account` input was the `beneficiary` address used to initialize the token purchase. Upon clicking the `call` button in the `balanceOf` function, the value of the token purchase in Wei was displayed.
+
+### Ganache results
+![Ganache results](Evaluation_Evidence/ganache_results.png)  
+The result of all contract functions performed was visible in the Ganache workspace.
+
+## Other information
+- All work for the KaseiCoin contract can be found in the [KaseiCoin.sol](https://github.com/julianritchey/solidity-homework/blob/main/KaseiCoin.sol) file.
+- All work for the KaseiCoinCrowdsale and KaseiCoinCrowdsaleDeployer contracts can be found in the [KaseiCoinCrowdsale.sol](https://github.com/julianritchey/solidity-homework/blob/main/KaseiCoinCrowdsale.sol) file.
+- All screenshots used in this assignment can be found in the [Evaluation_Evidence](https://github.com/julianritchey/solidity-homework/tree/main/Evaluation_Evidence) folder.
