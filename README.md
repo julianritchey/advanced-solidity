@@ -16,7 +16,7 @@ The KaseiCoinCrowdsale contract was compiled using Solidity compiler 0.5.17 (the
 
 ### KaseiCoinCrowdsaleDeployer contract compiled
 ![KaseiCoinCrowdsaleDeployer contract compiled](Evaluation_Evidence/kasei_coin_crowdsale_deployer_contract_compiled.png)  
-The KaseiCoinCrowdsale contract was compiled using Solidity compiler 0.5.17 (the compiler version used for all lesson work) in the `SOLIDITY COMPILER` section of Remix - Ethereum IDE.
+The KaseiCoinCrowdsaleDeployer contract was compiled using Solidity compiler 0.5.17 (the compiler version used for all lesson work) in the `SOLIDITY COMPILER` section of Remix - Ethereum IDE.
 
 ### KaseiCoinCrowdsaleDeployer contract initialized, confirmed and deployed
 #### Contract initialized and confirmed
@@ -93,7 +93,7 @@ The deployed contract contains 15 functions:
 ### First token purchase
 #### Token purchase initialized and confirmed
 
-| ![First token purchase initialized](Evaluation_Evidence/token_purchase_1_initialized.png) | ![First token purchase confirmed](Evaluation_Evidence/token_purchase_1_purchase_confirmed.png) |
+| ![First token purchase initialized](Evaluation_Evidence/token_purchase_1_initialized.png) | ![First token purchase confirmed](Evaluation_Evidence/token_purchase_1_confirmed.png) |
 | --- | --- |
 
 The first token purchase was initialized using the following inputs:
@@ -111,7 +111,7 @@ Upon clicking the `Confirm` button in the Metamask prompt, the token purchase wa
 
 #### Crowdsale confirmation
 ![First token purchase crowdsale confirmation](Evaluation_Evidence/token_purchase_1_crowdsale_confirmation.png)  
-Crowdsale confirmation of the token purchase was obtained using the `weiRaised` function of the `KaseiCoinCrowdsale` contract. Upon clicking the `weiRaised` button, the value of Wei raised from the purchase was displayed.
+Crowdsale confirmation of the token purchase was obtained using the `weiRaised` function of the `KaseiCoinCrowdsale` contract.
 > **Note:** The value of Wei raised from the purchase was 10000000000000000000.
 
 #### Beneficiary confirmation
@@ -140,7 +140,7 @@ Upon clicking the `Confirm` button in the Metamask prompt, the token purchase wa
 
 #### Crowdsale confirmation
 ![Second token purchase crowdsale confirmation](Evaluation_Evidence/token_purchase_2_crowdsale_confirmation.png)  
-Crowdsale confirmation of the token purchase was obtained using the `weiRaised` function of the `KaseiCoinCrowdsale` contract. Upon clicking the `weiRaised` button, the value of Wei raised from the first two purchases was displayed.
+Crowdsale confirmation of the token purchase (in addition to the first token purchase) was obtained using the `weiRaised` function of the `KaseiCoinCrowdsale` contract.
 > **Note:** The value of Wei raised from the first two purchases was 41500000000000000000.
 
 #### Beneficiary confirmation
@@ -149,8 +149,8 @@ Beneficiary confirmation of the token purchase was obtained using the `balanceOf
 
 ### Total supply confirmation
 ![Total supply confirmation](Evaluation_Evidence/total_supply_confirmation.png)  
-The total supply of purchased tokens was obtained using the `totalSupply` function of the `KaseiCoin` contract. Upon clicking the `totalSupply` button, the value of the total supply in Wei was displayed.
-> **Note:** The value of the total supply in Wei was 41500000000000000000.
+The total supply of purchased tokens was obtained using the `totalSupply` function of the `KaseiCoin` contract. The total supply was displayed in the token's smallest denominator (equivalient to Wei).
+> **Note:** The total supply in the token's smallest denominator was 41500000000000000000.
 
 ### Ganache results
 ![Ganache results](Evaluation_Evidence/ganache_results.png)  
@@ -159,7 +159,7 @@ The result of all contract functions performed was visible in the Ganache worksp
 ## Optional: Extend the crowdsale contract by using OpenZeppelin
 ### Ganache initialized
 ![Optional: Ganache initialized](Evaluation_Evidence/optional_ganache_initialized.png)  
-The addresses used in this demonstration were obtained from a Ganache workspace.
+The addresses used in this demonstration were obtained from a Ganache workspace and imported into MetaMask on a network connected to the Ganache workspace.
 
 ### KaseiCoinCrowdsale and KaseiCoinCrowdsaleDeployer contracts extended
 ![Optional: KaseiCoinCrowdsale and KaseiCoinCrowdsaleDeployer contracts extended](Evaluation_Evidence/optional_kasei_coin_crowdsale_contracts_extended.png)  
