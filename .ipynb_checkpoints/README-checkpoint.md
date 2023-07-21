@@ -279,23 +279,30 @@ Upon clicking the `transact` button in the `buyTokens` function, a transaction c
 ![Optional: Token purchase completed](Evaluation_Evidence/optional_token_purchase_completed.png)  
 Upon clicking the `Confirm` button in the Metamask prompt, the token purchase was completed.
 
-#### Crowdsale confirmation
-![First token purchase crowdsale confirmation](Evaluation_Evidence/token_purchase_1_crowdsale_confirmation.png)  
-Crowdsale confirmation of the token purchase was obtained using the `weiRaised` function of the `KaseiCoinCrowdsale` contract. Upon clicking the `weiRaised` button, the value of Wei raised from the purchase was displayed.
-> **Note:** The value of Wei raised from the purchase was 10000000000000000000.
-
 #### Beneficiary confirmation
-![Optional: Token purchase 1 beneficiary confirmation](Evaluation_Evidence/optional_token_purchase_beneficiary_confirmation.png)  
-Beneficiary confirmation of the token purchase was obtained using the `balanceOf` function of the `KaseiCoin` contract. The address entered in the `account` input was the `beneficiary` address used to initialize the token purchase. Upon clicking the `call` button in the `balanceOf` function, the value of the token purchase in Wei was displayed.
-> **Note:** The Wei value of 10 Ether is 10000000000000000000.
+![Optional: Token purchase beneficiary confirmation](Evaluation_Evidence/optional_token_purchase_beneficiary_confirmation.png)  
+Beneficiary confirmation of each token purchase was obtained using the `balanceOf` function of the `KaseiCoin` contract. The address entered in the `account` input was the `beneficiary` address used to initialize the token purchase. Upon clicking the `call` button in the `balanceOf` function, the value of the token purchase in Wei was displayed.
+> **Note:** The Wei value of 40 Ether is 40000000000000000000.
+
+#### Crowdsale confirmation
+![Optional: Token purchase crowdsale confirmation](Evaluation_Evidence/optional_token_purchase_crowdsale_confirmation.png)  
+Crowdsale confirmation of each token purchase was obtained using the `weiRaised` function of the `KaseiCoinCrowdsale` contract. Upon clicking the `weiRaised` button, the value of Wei raised from the purchase was displayed.
+> **Note:** The value of Wei raised from all purchases was 100000000000000000000.
 
 ### Crowdsale finalized
 ![Optional: Crowdsale finalized](Evaluation_Evidence/optional_crowdsale_finalized.png)  
-Once the crowdsale goal was reached, the crowdsale was finalized using the `finalize` function in the `KaseiCoinCrowdsale` contract.
+Once the crowdsale goal was reached and the close date had passed, the crowdsale was finalized using the `finalize` function in the `KaseiCoinCrowdsale` contract.
 
 ### Tokens withdrawn
 ![Optional: Tokens withdrawn](Evaluation_Evidence/optional_tokens_withdrawn.png)  
 After finalizing the crowdsale, tokens were withdrawn using the `withdrawTokens` function in the `KaseiCoinCrowdsale` contract. Three withdrawals were performed using each of the addresses originally used for purchasing tokens.
+
+### Tokens imported
+
+| ![Optional: Tokens imported 01](Evaluation_Evidence/optional_tokens_imported_01.png) | ![Optional: Tokens imported 02](Evaluation_Evidence/optional_tokens_imported_02.png) |
+| --- | --- |
+
+To view the KaseiCoin in a MetaMask wallet, the token was first manually added to MetaMask using the `KaseiCoin` contract address. After confirming the manual addition by clicking the `Add custom token` button, the import was confirmed by clicking the `Import tokens` button on the subsequent screen.
 
 ### Ganache results
 ![Optional: Ganache results](Evaluation_Evidence/optional_ganache_results.png)  
