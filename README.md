@@ -266,15 +266,15 @@ In this demonstration, three token purchases were performed. The purchases were 
 - Token purchase 1
   - `VALUE` => `40` and `Ether`
   - `beneficiary` => `0xB218A34D86085c21D0d773eF75661a74081C0065`
-  > **Note:** The `beneficiary` address was taken from address index `2` in Ganache.
+> **Note:** The `beneficiary` address was taken from address index `2` in Ganache.
 - Token purchase 2
   - `VALUE` => `40` and `Ether`
   - `beneficiary` => `0x8e5e57b2De2D520376c428A020adAB0b7B6Df860`
-  > **Note:** The `beneficiary` address was taken from address index `1` in Ganache.
+> **Note:** The `beneficiary` address was taken from address index `1` in Ganache.
 - Token purchase 3
   - `VALUE` => `20` and `Ether`
   - `beneficiary` => `0x34C1900E54F3849c39a9BC8202b6eE50C3567FA7`
-  > **Note:** The `beneficiary` address was taken from address index `0` in Ganache.
+> **Note:** The `beneficiary` address was taken from address index `0` in Ganache.
 
 The `VALUE` inputs are located in the `DEPLOY & RUN TRANSACTIONS` section of Remix - Ethereum IDE. The `beneficiary` input is located in the `buyTokens` function of the `KaseiCoinCrowdsale` contract.
 
@@ -296,18 +296,24 @@ Crowdsale confirmation of each token purchase was obtained using the `weiRaised`
 
 ### Crowdsale finalized
 ![Optional: Crowdsale finalized](Evaluation_Evidence/optional_crowdsale_finalized.png)  
-Once the crowdsale goal was reached and the close date had passed, the crowdsale was finalized using the `finalize` function in the `KaseiCoinCrowdsale` contract.
+Once the crowdsale goal was reached and the close date had passed, the crowdsale was finalized using the `finalize` function of the `KaseiCoinCrowdsale` contract.
 
 ### Tokens withdrawn
-![Optional: Tokens withdrawn](Evaluation_Evidence/optional_tokens_withdrawn.png)  
-After finalizing the crowdsale, tokens were withdrawn using the `withdrawTokens` function in the `KaseiCoinCrowdsale` contract. Three withdrawals were performed using each of the addresses originally used for purchasing tokens.
+
+| ![Optional: Tokens imported 01](Evaluation_Evidence/optional_tokens_imported_01.png) | ![Optional: Tokens imported 02](Evaluation_Evidence/optional_tokens_imported_02.png) |
+| --- | --- |
+
+After finalizing the crowdsale, tokens were withdrawn using the `withdrawTokens` function of the `KaseiCoinCrowdsale` contract. Three withdrawals were performed using each of the addresses originally used for purchasing tokens, entering the address into the `beneficiary` input. Upon clicking the `transact` button in the `withdrawTokens` function, a transaction confirmation prompt was provided by MetaMask.
+
+![Optional: Tokens withdrawn](Evaluation_Evidence/optional_token_withdrawal_completed.png)  
+Upon clicking the `Confirm` button in the Metamask prompt, the withdrawal was completed.
 
 ### Tokens imported
 
 | ![Optional: Tokens imported 01](Evaluation_Evidence/optional_tokens_imported_01.png) | ![Optional: Tokens imported 02](Evaluation_Evidence/optional_tokens_imported_02.png) |
 | --- | --- |
 
-To view the KaseiCoin in a MetaMask wallet, the token was first manually added to MetaMask using the `KaseiCoin` contract address. After confirming the manual addition by clicking the `Add custom token` button, the import was confirmed by clicking the `Import tokens` button on the subsequent screen.
+To view the KaseiCoin token in a MetaMask wallet, the token was first manually added to MetaMask using the `KaseiCoin` contract address. After confirming the manual addition by clicking the `Add custom token` button, the import was confirmed by clicking the `Import tokens` button on the subsequent screen.
 
 ### Ganache results
 ![Optional: Ganache results](Evaluation_Evidence/optional_ganache_results.png)  
@@ -329,14 +335,24 @@ To purchase KaseiCoin, a buyer must first enter their wallet address and the Eth
 
 The buyer may then click the `transact` button in the `buyTokens` function, which will open a transaction confirmation prompt in MetaMask.
 
-#### Token purchase completed
-![Optional: Token purchase completed](Evaluation_Evidence/optional_token_purchase_completed.png)  
+#### Complete token purchase
+![Optional: Complete token purchase](Evaluation_Evidence/optional_token_purchase_completed.png)  
 To confirm the transaction, the buyer must click the `Confirm` button in the Metamask prompt. Upon doing so, the token purchase is complete.
 
-#### Beneficiary confirmation
-![Optional: Token purchase beneficiary confirmation](Evaluation_Evidence/optional_token_purchase_beneficiary_confirmation.png)  
+#### Confirmation purchase
+![Optional: Confirm purchase](Evaluation_Evidence/optional_token_purchase_beneficiary_confirmation.png)  
 The buyer may confirm their purchase of KaseiCoin using the `balanceOf` function of the `KaseiCoin` contract. The address entered in the `account` input must be the address the buyer used to initialize the token purchase. Upon clicking the `call` button in the `balanceOf` function, the value of the buyer's token purchase in Wei is displayed.
 > In the demonstration, the value of the buyer's token purchase in Wei is 40000000000000000000.
+
+#### Withdraw token
+
+| ![Optional: Token withdrawal initialized](Evaluation_Evidence/optional_token_withdrawal_initialized.png) | ![Optional: Token withdrawal confirmed](Evaluation_Evidence/optional_token_withdrawal_confirmed.png) |
+| --- | --- |
+
+Once the crowdsale has been finalized, the buyer may withdraw their purchased tokens to their wallet using the `withdrawTokens` function of the `KaseiCoinCrowdsale` contract. The address entered in the `beneficiary` input must be the address of the buyer's wallet. The buyer may then click the `transact` button in the `withdrawTokens` function, which will open a transaction confirmation prompt in MetaMask.
+
+![Optional: Token withdrawal completed](Evaluation_Evidence/optional_token_withdrawal_completed.png)  
+To confirm the transaction, the buyer must click the `Confirm` button in the Metamask prompt. Upon doing so, the token withdrawal is complete.
 
 ## Other information
 - All work for the KaseiCoin contract can be found in the [KaseiCoin.sol](https://github.com/julianritchey/advanced-solidity-homework/blob/main/KaseiCoin.sol) file.
