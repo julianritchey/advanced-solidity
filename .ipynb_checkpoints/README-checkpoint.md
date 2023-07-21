@@ -334,6 +334,6 @@ The buyer may confirm their purchase of KaseiCoin using the `balanceOf` function
 > In the demonstration, the value of the buyer's token purchase in Wei is 40000000000000000000.
 
 ## Other information
-- All work for the KaseiCoin contract can be found in the [KaseiCoin.sol](https://github.com/julianritchey/solidity-homework/blob/main/KaseiCoin.sol) file.
-- All work for the KaseiCoinCrowdsale and KaseiCoinCrowdsaleDeployer contracts can be found in the [KaseiCoinCrowdsale.sol](https://github.com/julianritchey/solidity-homework/blob/main/KaseiCoinCrowdsale.sol) file.
-- All screenshots used in this assignment can be found in the [Evaluation_Evidence](https://github.com/julianritchey/solidity-homework/tree/main/Evaluation_Evidence) folder.
+- All work for the KaseiCoin contract can be found in the [KaseiCoin.sol](https://github.com/julianritchey/advanced-solidity-homework/blob/main/KaseiCoin.sol) file.
+- All work for the KaseiCoinCrowdsale and KaseiCoinCrowdsaleDeployer contracts can be found in the [KaseiCoinCrowdsale.sol](https://github.com/julianritchey/advanced-solidity-homework/blob/main/KaseiCoinCrowdsale.sol) file.
+- All screenshots used in this assignment can be found in the [Evaluation_Evidence](https://github.com/julianritchey/advanced-solidity-homework/tree/main/Evaluation_Evidence) folder.
