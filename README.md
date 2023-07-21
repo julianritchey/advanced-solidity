@@ -344,7 +344,7 @@ To confirm the transaction, the buyer must click the `Confirm` button in the Met
 The buyer may confirm their purchase of KaseiCoin using the `balanceOf` function of the `KaseiCoin` contract. The address entered in the `account` input must be the address the buyer used to initialize the token purchase. Upon clicking the `call` button in the `balanceOf` function, the value of the buyer's token purchase in Wei is displayed.
 > In the demonstration, the value of the buyer's token purchase in Wei is 40000000000000000000.
 
-#### Withdraw token
+#### Withdraw tokens
 
 | ![Optional: Token withdrawal initialized](Evaluation_Evidence/optional_token_withdrawal_initialized.png) | ![Optional: Token withdrawal confirmed](Evaluation_Evidence/optional_token_withdrawal_confirmed.png) |
 | --- | --- |
