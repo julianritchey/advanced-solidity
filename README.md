@@ -1,4 +1,4 @@
-# advanced-solidity
+# advanced-solidity-homework
 Module 21 Challenge: Martian Token Crowdsale
 
 ## Evaluation evidence
