@@ -156,6 +156,8 @@ The total supply of purchased tokens was obtained using the `totalSupply` functi
 ![Ganache results](Evaluation_Evidence/ganache_results.png)  
 The result of all contract functions performed was visible in the Ganache workspace.
 
+---
+
 ## Optional: Extend the crowdsale contract by using OpenZeppelin
 ### Ganache initialized
 ![Optional: Ganache initialized](Evaluation_Evidence/optional_ganache_initialized.png)  
