@@ -4,7 +4,7 @@ Module 21 Challenge: Martian Token Crowdsale
 ## Evaluation evidence
 ### Ganache initialized
 ![Ganache initialized](Evaluation_Evidence/ganache_initialized.png)  
-The addresses used in this demonstration were obtained from a Ganache workspace.
+The addresses used in this demonstration were obtained from a Ganache workspace and imported into MetaMask on a network connected to the Ganache workspace.
 
 ### KaseiCoin contract compiled
 ![KaseiCoin contract compiled](Evaluation_Evidence/kasei_coin_contract_compiled.png)  
@@ -146,6 +146,11 @@ Crowdsale confirmation of the token purchase was obtained using the `weiRaised` 
 #### Beneficiary confirmation
 ![Second token purchase beneficiary confirmation](Evaluation_Evidence/token_purchase_2_beneficiary_confirmation.png)  
 Beneficiary confirmation of the token purchase was obtained using the `balanceOf` function of the `KaseiCoin` contract. The address entered in the `account` input was the `beneficiary` address used to initialize the token purchase. Upon clicking the `call` button in the `balanceOf` function, the value of the token purchase in Wei was displayed.
+
+### Total supply confirmation
+![Total supply confirmation](Evaluation_Evidence/total_supply_confirmation.png)  
+The total supply of purchased tokens was obtained using the `totalSupply` function of the `KaseiCoin` contract. Upon clicking the `totalSupply` button, the value of the total supply in Wei was displayed.
+> **Note:** The value of the total supply in Wei was 41500000000000000000.
 
 ### Ganache results
 ![Ganache results](Evaluation_Evidence/ganache_results.png)  
