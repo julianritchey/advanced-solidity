@@ -300,7 +300,7 @@ Once the crowdsale goal was reached and the close date had passed, the crowdsale
 
 ### Tokens withdrawn
 
-| ![Optional: Tokens imported 01](Evaluation_Evidence/optional_tokens_imported_01.png) | ![Optional: Tokens imported 02](Evaluation_Evidence/optional_tokens_imported_02.png) |
+| ![Optional: Tokens imported 01](Evaluation_Evidence/optional_token_withdrawal_initialized.png) | ![Optional: Tokens imported 02](Evaluation_Evidence/optional_token_withdrawal_confirmed.png) |
 | --- | --- |
 
 After finalizing the crowdsale, tokens were withdrawn using the `withdrawTokens` function of the `KaseiCoinCrowdsale` contract. Three withdrawals were performed using each of the addresses originally used for purchasing tokens, entering the address into the `beneficiary` input. Upon clicking the `transact` button in the `withdrawTokens` function, a transaction confirmation prompt was provided by MetaMask.
